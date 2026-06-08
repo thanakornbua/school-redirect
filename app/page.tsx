@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(() => {
     const timer = window.setTimeout(() => {
       window.location.href = REDIRECT_URL
-    }, 1800)
+    }, 3000)
 
     return () => window.clearTimeout(timer)
   }, [])
@@ -20,7 +20,7 @@ export default function Home() {
       <section className="relative z-10 max-w-lg rounded-2xl border border-primary/50 bg-black/70 p-8 shadow-[0_0_45px_rgba(255,20,147,0.4)] backdrop-blur-sm">
         <h1 className="mb-4 text-3xl font-bold text-primary">Redirecting to School Portal</h1>
         <p className="mb-6 text-lg text-pink-300">
-          Taking you to <span className="text-highlight">96.30.126.41/sk/</span>
+          Taking you there in a few seconds: <span className="text-highlight">96.30.126.41/sk/</span>
         </p>
         <a
           href={REDIRECT_URL}
